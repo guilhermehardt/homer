@@ -2,70 +2,170 @@
 # Homepage configuration
 # See https://fontawesome.com/icons for icons options
 
-title: "Demo dashboard"
-subtitle: "Homer"
-logo: "assets/logo.png"
-# icon: "fas fa-skull-crossbones" Optional icon
+title: "toolbox"
+subtitle: "fluig"
+logo: "assets/fluig.png"
 footer: '<p>Created with <span class="has-text-danger">❤️</span> with <a href="https://bulma.io/">bulma</a>, <a href="https://vuejs.org/">vuejs</a> & <a href="https://fontawesome.com/">font awesome</a> // Fork me on <a href="https://github.com/bastienwirtz/homer"><i class="fab fa-github-alt"></i></a></p>'  # set false if you want to hide it.
 
-# Optional message
-message:
-  # url: https://....
-  style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
-  title: "Demo !" 
-  content: "This is a dummy homepage demo. Find more information on github.com/bastienwirtz/homer"
-
-# Optional navbar
-# links: [] # Allows for navbar (dark mode, layout, and search) without any links
-links:
-  - name: "ansible"
-    icon: "fab fa-github"
-    url: "https://github.com/bastienwirtz/homer"
-    target: '_blank' # optionnal html a tag target attribute
-  - name: "Wiki"
-    icon: "fas fa-book"
-    url: "https://www.wikipedia.org/"
-
-# Services
-# First level array represent a group.
-# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
 services:
-  - name: "DevOps"
-    icon: "fas fa-code-branch"
+  - name: "No-Code Prod"
+    icon: "fas fa-tools"
     items:
-      - name: "Jenkins"
-        logo: "assets/tools/jenkins.png"
-        subtitle: "Continuous integration server"
-        tag: "CI"
-        url: "https://jenkins.io/"
-        target: '_blank' # optionnal html a tag target attribute
-      - name: "RabbitMQ Management"
-        logo: "assets/tools/rabbitmq.png"
-        subtitle: "Manage & monitor RabbitMQ server"
-        tag: "haproxy"
-        # Optional tagstyle
-        # Same styling options as the optional message.
-        tagstyle: "is-success"
-        url: "https://www.rabbitmq.com/"
-  - name: "Monitoring"
-    icon: "fas fa-heartbeat"
-    items:
-      - name: "M/Monit"
-        logo: "assets/tools/monit.png"
-        subtitle: "Monitor & manage all monit enabled hosts"
-        tag: "monit"
-        url: "https://mmonit.com/monit/"
       - name: "Grafana"
         logo: "assets/tools/grafana.png"
         subtitle: "Metric analytics & dashboards"
-        url: "https://grafana.com/"
+        url: "https://grafana.fluig.app/"
+        target: '_blank'
+      - name: "Prometheus"
+        logo: "assets/tools/prometheus.webp"
+        subtitle: "Monitoring and metrics"
+        url: "https://prometheus.fluig.app/"
+        target: '_blank'
+      - name: "AlertManager"
+        logo: "assets/tools/prometheus.webp"
+        url: "https://alertmanager.fluig.app/"
+        target: '_blank'
       - name: "Kibana"
-        logo: "assets/tools/elastic.png"
-        subtitle: "Explore & visualize logs"
-        tag: "elk"
-        url: "https://www.elastic.co/products/kibana"
-      - name: "Website monitoring"
-        logo: "assets/tools/pingdom.png"
-        subtitle: "Pingdom public reports overview"
-        tag: "CI"
-        url: "https://www.pingdom.com/"
+        logo: "assets/tools/kibana.png"
+        url: "https://kibana.fluig.app/"
+        target: '_blank'
+      - name: "RabbitMQ"
+        logo: "assets/tools/rabbitmq.png"
+        url: "https://rabbitmq-cluster.fluig.app/"
+        target: '_blank'
+      - name: "RabbitMQ Connector"
+        logo: "assets/tools/rabbitmq.png"
+        url: "https://rabbitmq-connector.fluig.app/"
+        target: '_blank'
+      - name: "Logs and Database access"
+        logo: "assets/tools/logs.png"
+        url: "https://tdn.totvs.com/pages/viewpage.action?pageId=465390867"
+        target: '_blank'
+  - name: "No-Code Dev (Homolog/QA)"
+    icon: "fas fa-tools"
+    items:
+      - name: "Grafana"
+        logo: "assets/tools/grafana.png"
+        subtitle: "Metric analytics & dashboards"
+        url: "https://grafana.fluig.io/"
+        target: '_blank'
+      - name: "Prometheus"
+        logo: "assets/tools/prometheus.webp"
+        subtitle: "Monitoring and metrics"
+        url: "https://prometheus.fluig.io/"
+        target: '_blank'
+      - name: "AlertManager"
+        logo: "assets/tools/prometheus.webp"
+        url: "https://alertmanager.fluig.io/"
+        target: '_blank'
+      - name: "Kibana"
+        logo: "assets/tools/kibana.png"
+        url: "https://kibana.fluig.io/"
+        target: '_blank'
+      - name: "RabbitMQ"
+        logo: "assets/tools/rabbitmq.png"
+        url: "https://rabbitmq.fluig.io/"
+        target: '_blank'
+      - name: "RabbitMQ Connector Homolog"
+        logo: "assets/tools/rabbitmq.png"
+        url: "http://rabbitmq-connector-homolog.fluig.io/"
+        target: '_blank'
+      - name: "RabbitMQ Connector QA"
+        logo: "assets/tools/rabbitmq.png"
+        url: "http://rabbitmq-connector.qa.fluig.io/"
+        target: '_blank'
+      - name: "Logs and Database access"
+        logo: "assets/tools/logs.png"
+        url: "https://tdn.totvs.com/pages/viewpage.action?pageId=465390867"
+        target: '_blank'
+  - name: "Identity Prod"
+    icon: "fas fa-tools"
+    items:
+      - name: "Grafana"
+        logo: "assets/tools/grafana.png"
+        subtitle: "Metric analytics & dashboards"
+        url: "https://grafana.fluigidentity.com/"
+        target: '_blank'
+      - name: "Prometheus"
+        logo: "assets/tools/prometheus.webp"
+        subtitle: "Monitoring and metrics"
+        url: "https://prometheus.cluster.k8s-idm3-prod-sa-east-1.fluig.io/"
+        target: '_blank'
+      - name: "AlertManager"
+        logo: "assets/tools/prometheus.webp"
+        url: "http://alertmanager.cluster.k8s-idm3-prod-sa-east-1.fluig.io/"
+        target: '_blank'
+      - name: "Kibana"
+        logo: "assets/tools/kibana.png"
+        subtitle: 'Kibana events'
+        url: "http://kibana.cluster.k8s-idm3-prod-sa-east-1.fluig.io/"
+        target: '_blank'
+      - name: "RabbitMQ"
+        logo: "assets/tools/rabbitmq.png"
+        url: "https://rabbitmq.fluigidentity.com/"
+        target: '_blank'
+  - name: "Identity Homolog"
+    icon: "fas fa-tools"
+    items:
+      - name: "Grafana"
+        logo: "assets/tools/grafana.png"
+        subtitle: "Metric analytics & dashboards"
+        url: "https://grafana.customerfi.com/"
+        target: '_blank'
+      - name: "Prometheus"
+        logo: "assets/tools/prometheus.webp"
+        subtitle: "Monitoring and metrics"
+        url: "https://prometheus.cluster.k8s-idm1-dev-us-east-1.fluig.io/"
+        target: '_blank'
+      - name: "AlertManager"
+        logo: "assets/tools/prometheus.webp"
+        url: "http://alertmanager.cluster.k8s-idm1-dev-us-east-1.fluig.io/"
+        target: '_blank'
+      - name: "Kibana"
+        logo: "assets/tools/kibana.png"
+        subtitle: 'Kibana events'
+        url: "http://kibana.cluster.k8s-idm1-dev-us-east-1.fluig.io/"
+        target: '_blank'
+      - name: "RabbitMQ"
+        logo: "assets/tools/rabbitmq.png"
+        url: "https://rabbitmq.customerfi.com/"
+        target: '_blank'
+  - name: "Identity QA"
+    icon: "fas fa-tools"
+    items:
+      - name: "Grafana"
+        logo: "assets/tools/grafana.png"
+        subtitle: "Metric analytics & dashboards"
+        url: "https://grafana.fluigidentity.net/"
+        target: '_blank'
+      - name: "Prometheus"
+        logo: "assets/tools/prometheus.webp"
+        subtitle: "Monitoring and metrics"
+        url: "https://prometheus.cluster.k8s-idm4-dev-us-east-1.fluig.io/"
+        target: '_blank'
+      - name: "AlertManager"
+        logo: "assets/tools/prometheus.webp"
+        url: "http://alertmanager.cluster.k8s-idm4-dev-us-east-1.fluig.io/"
+        target: '_blank'
+      - name: "Kibana"
+        logo: "assets/tools/kibana.png"
+        subtitle: 'Kibana events'
+        url: "http://kibana.cluster.k8s-idm4-dev-us-east-1.fluig.io/"
+        target: '_blank'
+      - name: "RabbitMQ"
+        logo: "assets/tools/rabbitmq.png"
+        url: "https://rabbitmq.fluigidentity.net/"
+        target: '_blank'
+  - name: "Status"
+    icon: "fas fa-heartbeat"
+    items:
+      - name: "Status fluig"
+        logo: "assets/fluig.png"
+        subtitle: "Public status page"
+        url: "https://status.fluig.com/"
+        target: '_blank'
+      - name: "Status Identity"
+        logo: "assets/fluig.png"
+        subtitle: "Public status page"
+        url: "http://status.fluigidentity.com/"
+        target: '_blank'
